@@ -61,6 +61,16 @@
         to_port: 6784
         cidr_ip: 0.0.0.0/0
         rule_desc: Weave Net control and data
+      - proto: tcp
+        from_port: 32222
+        to_port: 32222
+        cidr_ip: 0.0.0.0/0
+        rule_desc: Giropops App
+      - proto: tcp
+        from_port: 32111
+        to_port: 32111
+        cidr_ip: 0.0.0.0/0
+        rule_desc: Giropops App Prometheus Metric
     rules_egress:
       - proto: all
         cidr_ip: 0.0.0.0/0
